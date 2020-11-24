@@ -1,1 +1,0 @@
-En está carpeta se van a almacenar todos los querys y la base de datos que se creen.

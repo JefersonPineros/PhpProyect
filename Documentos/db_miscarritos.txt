@@ -1,0 +1,161 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+USE `mydb` ;
+
+-- -----------------------------------------------------
+-- Table `mydb`.`tipo_Usuario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tipo_Usuario` (
+  `idtipo_Usuario` INT NOT NULL AUTO_INCREMENT,
+  `descripcion` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idtipo_Usuario`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`usuario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
+  `idUsuario` INT NOT NULL AUTO_INCREMENT,
+  `nombre_Razon_Social` VARCHAR(50) NOT NULL,
+  `tipo_Identificacion` VARCHAR(3) NOT NULL,
+  `numero_Identificacion` BIGINT(15) NOT NULL,
+  `direccion` VARCHAR(45) NOT NULL,
+  `telefono` BIGINT(10) NOT NULL,
+  `tipo_Usuario_idtipo_Usuario` INT NOT NULL,
+  PRIMARY KEY (`idUsuario`),
+  INDEX `fk_Usuario_tipo_Usuario_idx` (`tipo_Usuario_idtipo_Usuario` ASC) VISIBLE,
+  CONSTRAINT `fk_Usuario_tipo_Usuario`
+    FOREIGN KEY (`tipo_Usuario_idtipo_Usuario`)
+    REFERENCES `mydb`.`tipo_Usuario` (`idtipo_Usuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`tipo_vehiculo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tipo_vehiculo` (
+  `idtipo_vehiculo` INT NOT NULL AUTO_INCREMENT,
+  `descripcion` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idtipo_vehiculo`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`alquiler`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`alquiler` (
+  `idalquiler` INT NOT NULL AUTO_INCREMENT,
+  `costo` DOUBLE NOT NULL,
+  `estado_alquiler` VARCHAR(45) NOT NULL,
+  `usuario_idUsuario` INT NOT NULL,
+  `fecha_inicial` DATE NOT NULL,
+  `fecha_final` DATE NULL,
+  PRIMARY KEY (`idalquiler`),
+  INDEX `fk_alquiler_usuario1_idx` (`usuario_idUsuario` ASC) VISIBLE,
+  CONSTRAINT `fk_alquiler_usuario1`
+    FOREIGN KEY (`usuario_idUsuario`)
+    REFERENCES `mydb`.`usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`reserva`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`reserva` (
+  `idreservas` INT NOT NULL AUTO_INCREMENT,
+  `estado_reserva` VARCHAR(45) NOT NULL,
+  `usuario_idUsuario` INT NOT NULL,
+  `fecha_reserva` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idreservas`),
+  INDEX `fk_reservas_usuario1_idx` (`usuario_idUsuario` ASC) VISIBLE,
+  CONSTRAINT `fk_reservas_usuario1`
+    FOREIGN KEY (`usuario_idUsuario`)
+    REFERENCES `mydb`.`usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`vehiculo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`vehiculo` (
+  `idvehiculo` INT NOT NULL AUTO_INCREMENT,
+  `marca` VARCHAR(20) NOT NULL,
+  `modelo` VARCHAR(20) NOT NULL,
+  `placa` VARCHAR(7) NOT NULL,
+  `cantidad_pasajeros` VARCHAR(45) NOT NULL,
+  `color` VARCHAR(45) NOT NULL,
+  `numero_puertas` VARCHAR(45) NOT NULL,
+  `capacidad_carga` VARCHAR(45) NOT NULL,
+  `tipo_vehiculo_idtipo_vehiculo` INT NOT NULL,
+  `alquiler_idalquiler` INT NOT NULL,
+  `reserva_idreservas` INT NOT NULL,
+  PRIMARY KEY (`idvehiculo`),
+  INDEX `fk_vehiculo_tipo_vehiculo1_idx` (`tipo_vehiculo_idtipo_vehiculo` ASC) VISIBLE,
+  INDEX `fk_vehiculo_alquiler1_idx` (`alquiler_idalquiler` ASC) VISIBLE,
+  INDEX `fk_vehiculo_reserva1_idx` (`reserva_idreservas` ASC) VISIBLE,
+  CONSTRAINT `fk_vehiculo_tipo_vehiculo1`
+    FOREIGN KEY (`tipo_vehiculo_idtipo_vehiculo`)
+    REFERENCES `mydb`.`tipo_vehiculo` (`idtipo_vehiculo`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_vehiculo_alquiler1`
+    FOREIGN KEY (`alquiler_idalquiler`)
+    REFERENCES `mydb`.`alquiler` (`idalquiler`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_vehiculo_reserva1`
+    FOREIGN KEY (`reserva_idreservas`)
+    REFERENCES `mydb`.`reserva` (`idreservas`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`taller`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`taller` (
+  `idtaller` INT NOT NULL AUTO_INCREMENT,
+  `fecha_revision` DATE NOT NULL,
+  `descripcion` VARCHAR(300) NOT NULL,
+  `estado_vehiculo` VARCHAR(45) NOT NULL,
+  `usuario_idUsuario` INT NOT NULL,
+  `vehiculo_idvehiculo` INT NOT NULL,
+  PRIMARY KEY (`idtaller`),
+  INDEX `fk_taller_usuario1_idx` (`usuario_idUsuario` ASC) VISIBLE,
+  INDEX `fk_taller_vehiculo1_idx` (`vehiculo_idvehiculo` ASC) VISIBLE,
+  CONSTRAINT `fk_taller_usuario1`
+    FOREIGN KEY (`usuario_idUsuario`)
+    REFERENCES `mydb`.`usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_taller_vehiculo1`
+    FOREIGN KEY (`vehiculo_idvehiculo`)
+    REFERENCES `mydb`.`vehiculo` (`idvehiculo`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
