@@ -4755,8 +4755,10 @@
         },
         {
             "name": "voku/portable-ascii",
-<<<<<<< HEAD
-            "version": "1.5.3",
+
+
+            "version": "1.5.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
@@ -4764,9 +4766,13 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
                 "reference": "80953678b19901e5165c56752d087fc11526017c",
 =======
+=======
+
+>>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
             "version": "1.5.6",
             "source": {
                 "type": "git",
@@ -4777,7 +4783,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
                 "reference": "80953678b19901e5165c56752d087fc11526017c",
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
+
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
+                "reference": "80953678b19901e5165c56752d087fc11526017c",
                 "shasum": ""
             },
             "require": {
@@ -4814,6 +4822,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
+<<<<<<< HEAD
 <<<<<<< .mine
                 "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
 
@@ -4822,9 +4831,13 @@
                 "source": "https://github.com/voku/portable-ascii/tree/master"
 >>>>>>> .theirs
 =======
+=======
+
+
+>>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
                 "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
-            },
+
+           },
             "funding": [
                 {
                     "url": "https://www.paypal.me/moelleken",
@@ -4847,6 +4860,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< .mine
             "time": "2020-11-12T00:07:28+00:00"
 
@@ -4855,8 +4869,10 @@
             "time": "2020-07-22T23:32:04+00:00"
 >>>>>>> .theirs
 =======
+=======
+
+>>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
             "time": "2020-11-12T00:07:28+00:00"
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
         }
     ],
     "packages-dev": [
