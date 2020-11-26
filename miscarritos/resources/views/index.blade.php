@@ -6,7 +6,7 @@
     <title>Mis Carritos.com</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="static/assets/css/main.css"/>
 </head>
 
 <body>
@@ -23,11 +23,13 @@
 
                         <!-- Nav -->
                         <nav id="nav">
-                            <a href="Nosotros.html">Nosotros</a>
+                            <a href="<?php Route::get('HomePage', function ($id) {
+                                return view('Nosotros');
+                            }); ?>">Nosotros</a>
                             <a href="Servicios.html">Servicios</a>
                             <a href="#">Two Column #1</a>
                             <a href="#">Two Column #2</a>
-                            <a href="#">Contactenos</a>
+                            <a href="">Contactenos</a>
                         </nav>
 
                     </div>
@@ -46,7 +48,7 @@
                         <div class="col-6 col-12-medium imp-medium">
 
                             <!-- Banner Image -->
-                            <a href="#" class="bordered-feature-image"><img src="images/banner.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/banner.jpg" alt="" /></a>
 
                         </div>
                     </div>
@@ -62,7 +64,7 @@
 
                         <!-- Feature #1 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic01.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic01.jpg" alt="" /></a>
                             <h2>Bajo Costo</h2>
                             <p>
                                 Los vehículos de bajo costo se caracterizan por su construcción sumamente económicos, siendo hecho en materiales resistentes más no de alta calidad.
@@ -74,7 +76,7 @@
 
                         <!-- Feature #2 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic02.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic02.jpg" alt="" /></a>
                             <h2>Vehículo familiar</h2>
                             <p>
                                 Los vehículos familiares se caracterizan por sus amplias magnitudes tanto en el exterior como en el interior que permiten el traslado de un grupo familiar (en base a un grupo familiar de cuatro a cinco miembros).
@@ -86,7 +88,7 @@
 
                         <!-- Feature #3 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic03.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic03.jpg" alt="" /></a>
                             <h2>Sedanes</h2>
                             <p>
                                 Vehículos caracterizados por la presentación de su diseño peculiar que se caracteriza por un capo de gran amplitud, como también por la segmentación del maletero de los asientos, con la finalidad de aportar mayor tamaño en el interior; pese a su apariencia
@@ -99,7 +101,7 @@
 
                         <!-- Feature #4 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic04.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic04.jpg" alt="" /></a>
                             <h2>Vehículo de lujo.</h2>
                             <p>
                                 Son considerados vehículos de alta gama, tanto por los materiales que los componen como por las características que los mismos pueden aportar, se caracterizan por disponer de un diseño elegante y de amplitud.
@@ -111,7 +113,7 @@
 
                         <!-- Feature #5 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic10.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic10.jpg" alt="" /></a>
                             <h2>Deportivos</h2>
                             <p>
                                 Se distingue por su aspecto, luciendo similar a los autos de carrera, se caracterizan por ser de pequeñas proporciones como también por circular a altas velocidades, de modo tal que su aspecto relevante lo constituyen sus motores.
@@ -123,7 +125,7 @@
 
                         <!-- Feature #6 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic11.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic11.jpg" alt="" /></a>
                             <h2>Todoterreno</h2>
                             <p>
                                 Vehículos que cuentan con un diseño compacto y con una apariencia imponente, los mismos se caracterizan por presentar un alto sistema de tracción que permite su circulación en terrenos rústicos y desiguales.
@@ -135,7 +137,7 @@
 
                         <!-- Feature #7 -->
                         <section>
-                            <a href="#" class="bordered-feature-image"><img src="images/pic12.jpg" alt="" /></a>
+                            <a href="#" class="bordered-feature-image"><img src="static/images/pic12.jpg" alt="" /></a>
                             <h2>Comerciales</h2>
                             <p>
                                 Son aquellos vehículos diseñados con el fin de transportar bien sea personas o materiales, estos pueden variar en su tamaño como en la calidad de los materiales.
@@ -159,7 +161,7 @@
                                 <h2>Quienes Somos</h2>
                                 <h3>Conoce nuestra empresa</h3>
                             </header>
-                            <a href="Nosotros.html" class="feature-image"><img src="images/pic05.jpg" alt="" /></a>
+                            <a href="Nosotros.html" class="feature-image"><img src="static/images/pic05.jpg" alt="" /></a>
                             <p>
                                 Mis Carritos.com ofrece una opción creada para movilizarse dentro y fuera de la ciudad con tus amigos o familiares, también ofrecemos servicios empresariales, estamos comprometidos con la excelencia en el servicio encontraras claridad en tarifas y políticas.
                                 ¡Has llegado al lugar correcto! Revalorizamos tu tiempo para que puedas continuar finiquitando los demás detalles del viaje, obtienes tranquilidad y seguridad con reservas.
@@ -198,22 +200,22 @@
                             </header>
                             <ul class="quote-list">
                                 <li>
-                                    <img src="images/pic07.jpg" alt="" />
+                                    <img src="static/images/pic07.jpg" alt="" />
                                     <p>"El primer paso no te lleva donde quieres ir, pero te acerca donde quieres estar."</p>
                                     <span>Wainer Gaitán, Web Design</span>
                                 </li>
                                 <li>
-                                    <img src="images/pic06.jpg" alt="" />
+                                    <img src="static/images/pic06.jpg" alt="" />
                                     <p>"Seamos realistas. ¡ Hagamos lo imposible."</p>
                                     <span>Johan Gamez, Web Design</span>
                                 </li>
                                 <li>
-                                    <img src="images/pic08.jpg" alt="" />
+                                    <img src="static/images/pic08.jpg" alt="" />
                                     <p>"Lucha por tus sueños o los demás te impondrán los suyos."</p>
                                     <span>Jefferson Piñeros, Web Design</span>
                                 </li>
                                 <li>
-                                    <img src="images/pic09.jpg" alt="" />
+                                    <img src="static/images/pic09.jpg" alt="" />
                                     <p>"Insistir, persistir y nunca desistir."</p>
                                     <span>Ruby Romero, Web Design</span>
                                 </li>
@@ -310,11 +312,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/browser.min.js"></script>
+    <script src="static/assets/js/breakpoints.min.js"></script>
+    <script src="static/assets/js/util.js"></script>
+    <script src="static/assets/js/main.js"></script>
 
 </body>
 

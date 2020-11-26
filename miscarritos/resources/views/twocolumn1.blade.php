@@ -23,13 +23,16 @@
 								<!-- Logo -->
 									<h1><a href="index.html" id="logo">Halcyonic</a></h1>
 
-								<!-- Nav -->
+                                <!-- Nav -->
+
 									<nav id="nav">
-										<a href="index.blade.php">Homepage</a>
-										<a href="threecolumn.blade.php">Three Column</a>
-										<a href="twocolumn1.php">Two Column #1</a>
-										<a href="twocolumn2.php">Two Column #2</a>
-										<a href="onecolumn.php">One Column</a>
+										<a href="<?php Route::get('HomePage', function ($id) {
+                                            return view('index');
+                                        }); ?>">Homepage</a>
+										<a href="threecolumn.html">Three Column</a>
+										<a href="twocolumn1.html">Two Column #1</a>
+										<a href="twocolumn2.html">Two Column #2</a>
+										<a href="onecolumn.html">One Column</a>
 									</nav>
 
 							</div>
