@@ -42,7 +42,32 @@
 
                             <!-- Banner Copy -->
                             <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
-                            <a href="#" class="button-large">Click aquí!</a>
+                            <a href="#" class="button-large">Login</a>
+                            @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                    @else
+                        <a href=" @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth
+                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                        @endif
+                    @endif
+                </div>
+            @endif" class="text-sm text-gray-700 underline">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                        @endif
+                    @endif
+                </div>
+            @endif
 
                         </div>
                         <div class="col-6 col-12-medium imp-medium">
