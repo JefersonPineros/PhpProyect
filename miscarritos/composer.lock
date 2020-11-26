@@ -4706,32 +4706,6 @@
         },
         {
             "name": "voku/portable-ascii",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "version": "1.5.3",
-=======
-
-
-            "version": "1.5.6",
-
->>>>>>> c737e500b062658be1ceb61ce7a7b4fbde510ca5
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "80953678b19901e5165c56752d087fc11526017c"
-            },
-            "dist": {
-                "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/25bcbf01678930251fd572891447d9e318a6e2b8",
-                "reference": "25bcbf01678930251fd572891447d9e318a6e2b8",
-=======
-=======
-
->>>>>>> c737e500b062658be1ceb61ce7a7b4fbde510ca5
-=======
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
             "version": "1.5.6",
             "source": {
                 "type": "git",
@@ -4742,16 +4716,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
                 "reference": "80953678b19901e5165c56752d087fc11526017c",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
-=======
-
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
-                "reference": "80953678b19901e5165c56752d087fc11526017c",
->>>>>>> c737e500b062658be1ceb61ce7a7b4fbde510ca5
-=======
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
                 "shasum": ""
             },
             "require": {
@@ -4788,25 +4752,8 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "source": "https://github.com/voku/portable-ascii/tree/master"
-=======
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
-            },
-=======
-
-
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
-
-           },
->>>>>>> c737e500b062658be1ceb61ce7a7b4fbde510ca5
-=======
                 "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
             },
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
             "funding": [
                 {
                     "url": "https://www.paypal.me/moelleken",
@@ -4829,18 +4776,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "time": "2020-07-22T23:32:04+00:00"
-=======
-            "time": "2020-11-12T00:07:28+00:00"
->>>>>>> df8151ded2d9a5d44afa83f524e01a454d0528ec
-=======
-
-            "time": "2020-11-12T00:07:28+00:00"
->>>>>>> c737e500b062658be1ceb61ce7a7b4fbde510ca5
-=======
             "time": "2020-11-12T00:07:28+00:00"
         },
         {
@@ -4895,7 +4830,6 @@
                 "source": "https://github.com/webmozart/assert/tree/master"
             },
             "time": "2020-07-08T17:02:28+00:00"
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
         }
     ],
     "packages-dev": [
