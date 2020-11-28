@@ -23,13 +23,13 @@
 
                         <!-- Nav -->
                         <nav id="nav">
-                            <a href="<?php Route::get('HomePage', function ($id) {
-                                return view('Nosotros');
-                            }); ?>">Nosotros</a>
-                            <a href="Servicios.html">Servicios</a>
-                            <a href="#">Two Column #1</a>
-                            <a href="#">Two Column #2</a>
-                            <a href="">Contactenos</a>
+                            <a href="/nosotros">Nosotros</a>
+                    
+                            <a href="{{ url('/servicios') }}">Servicios</a>
+               
+                            <a href="/threecolumn">threecolumn </a>
+                            <a href="/twocolumn1">Contactenos </a>
+                            
                         </nav>
 
                     </div>
@@ -42,34 +42,15 @@
 
                             <!-- Banner Copy -->
                             <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
-                            <a href="#" class="button-large">Login</a>
-                            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href=" @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
+                            
+                    @if (Route::has('login'))
+                   
+                        <a href="{{ route('login') }}" class="button-large" style="margin-left:10% ;background: #009688;box-shadow:none">Login</a>
                     @endif
-                </div>
-            @endif" class="text-sm text-gray-700 underline">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="button-large " style="margin-left: 12%;background:#F5F34B;box-shadow:none">Registro</a>
                     @endif
-                </div>
-            @endif
-
-                        </div>
+            </div>
                         <div class="col-6 col-12-medium imp-medium">
 
                             <!-- Banner Image -->

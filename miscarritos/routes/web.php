@@ -17,6 +17,19 @@ Route::get('/', function () {
     return view('index');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get("/servicios",function(){
+	return view('servicios');
+});
+
+Route::view("nosotros","nosotros");
+Route::view("index","index");
+Route::view("servAdcional","servAdcional");
+Route::view("threecolumn","threecolumn");
+Route::view("twocolumn1","twocolumn1");
+
+
