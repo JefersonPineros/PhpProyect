@@ -4706,27 +4706,6 @@
         },
         {
             "name": "voku/portable-ascii",
-<<<<<<< HEAD
-
-
-            "version": "1.5.6",
-
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "80953678b19901e5165c56752d087fc11526017c"
-            },
-            "dist": {
-                "type": "zip",
-<<<<<<< HEAD
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/80953678b19901e5165c56752d087fc11526017c",
-                "reference": "80953678b19901e5165c56752d087fc11526017c",
-=======
-=======
-
->>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
-=======
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
             "version": "1.5.6",
             "source": {
                 "type": "git",
@@ -4773,22 +4752,6 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .mine
-                "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
-
-=======
-<<<<<<< HEAD
-                "source": "https://github.com/voku/portable-ascii/tree/master"
->>>>>>> .theirs
-=======
-=======
-
-
->>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
-=======
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
                 "source": "https://github.com/voku/portable-ascii/tree/1.5.6"
             },
             "funding": [
@@ -4813,21 +4776,6 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .mine
-            "time": "2020-11-12T00:07:28+00:00"
-
-=======
-<<<<<<< HEAD
-            "time": "2020-07-22T23:32:04+00:00"
->>>>>>> .theirs
-=======
-=======
-
->>>>>>> 75cd1280a9f9573c7d032600db7faa420d068a81
-=======
->>>>>>> 8d1f901ad2423ff88c176bb49fef3547fa75c322
             "time": "2020-11-12T00:07:28+00:00"
         },
         {
