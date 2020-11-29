@@ -14,6 +14,15 @@ use App\Http\Controllers\MiscarritosController;
 |
 */
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get("/servicios",function(){
+	return view('servicios');
+});
+
 Route::get('/', [MiscarritosController::class, 'index']);
 
 Route::get('index', [MiscarritosController::class, 'index'])->name('index');
@@ -23,3 +32,24 @@ Route::get('servicios', [MiscarritosController::class, 'servicios'])->name('serv
 Route::get('solicitar', [MiscarritosController::class, 'solicitar'])->name('solicitar');
 
 Route::get('nosotros', [MiscarritosController::class, 'nosotros'])->name('nosotros');
+<<<<<<< .mine
+
+
+
+
+
+
+
+
+
+=======
+});
+
+Route::view("nosotros","nosotros");
+Route::view("index","index");
+Route::view("servAdcional","servAdcional");
+Route::view("threecolumn","threecolumn");
+Route::view("twocolumn1","twocolumn1");
+
+
+>>>>>>> .theirs
