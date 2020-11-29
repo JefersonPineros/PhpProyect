@@ -14,6 +14,8 @@ use App\Http\Controllers\MiscarritosController;
 |
 */
 
+Route::get('/', [MiscarritosController::class, 'index']);
+
 Route::get('index', [MiscarritosController::class, 'index'])->name('index');
 
 Route::get('servicios', [MiscarritosController::class, 'servicios'])->name('servicios');
