@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MiscarritosController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+
+Route::get('/', [MiscarritosController::class, 'index']);
+
+Route::get('index', [MiscarritosController::class, 'index'])->name('index');
+
+Route::get('servicios', [MiscarritosController::class, 'servicios'])->name('servicios');
+
+Route::get('solicitar', [MiscarritosController::class, 'solicitar'])->name('solicitar');
+
+Route::get('nosotros', [MiscarritosController::class, 'nosotros'])->name('nosotros');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
