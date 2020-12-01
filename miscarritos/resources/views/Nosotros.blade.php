@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Halcyonic by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 
 <head>
@@ -79,47 +75,29 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <section id="footer">
+         <!-- Footer -->
+         <section id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-8 col-12-medium">
 
                         <!-- Links -->
                         <section>
-                            <h2>Links to Important Stuff</h2>
+                            <h2>Siguenos</h2>
                             <div>
                                 <div class="row">
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Facebook</a></li>
+                                            <br>
+                                            <li><a href="#">Twitter</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Instagram</a></li>
+                                            <br>
+                                            <li><a href="#">LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -127,15 +105,28 @@
                         </section>
 
                     </div>
-                    <div class="col-4 col-12-medium imp-medium">
+                    <div class="col-4 col-10-medium imp-medium">
 
                         <!-- Blurb -->
                         <section>
-                            <h2>An Informative Text Blurb</h2>
-                            <p>
-                                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet dolor
-                                sit amet lorem ipsum consequat gravida justo mollis.
-                            </p>
+                            <h2>Encuentranos</h2>
+                            <div>
+                                <strong>
+									Direccion:
+									<br>
+								</strong> Carrera 13 Nº 65-10 Barrio Chapinero - Bogotá, Colombia.
+                            </div>
+                            <div>
+                                <strong>PBX:</strong>
+                                (1) 5461600
+                                <br>
+                                <strong>Móvil</strong>
+                                +57 (318) 6625068
+                            </div>
+                            <div>
+                                <strong>Email:</strong>
+                                <a>skillex.gaes@gmail.com</a>
+                            </div>
                         </section>
 
                     </div>
@@ -145,17 +136,17 @@
 
         <!-- Copyright -->
         <div id="copyright">
-            &copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+            &copy; Skillex. All rights reserved. | Design: SKILLEX
         </div>
 
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/browser.min.js"></script>
+    <script src="static/assets/js/breakpoints.min.js"></script>
+    <script src="static/assets/js/util.js"></script>
+    <script src="static/assets/js/main.js"></script>
 
 </body>
 

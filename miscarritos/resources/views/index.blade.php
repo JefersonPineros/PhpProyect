@@ -178,14 +178,13 @@
                                 <h3>Conoce nuestros servicios</h3>
                             </header>
                             <ul class="check-list">
-                                <li>Disponibilidad de los carros en alquiler las 24 horas </li>
-                                <li>Kilometraje Libre.</li>
-                                <li>Mantenimientos.</li>
-                                <li>Reposición de carros o autos en Bogotá durante el alquiler por mantenimientos.</li>
-                                <li>Servicio de asistencia las 24 horas.</li>
-                                <li>Servicio a domicilio.</li>
-                                <li>Seguros hasta 90%.</li>
-                                <li>Una silla para infantes.</li>
+                            <ul class="check-list">
+                                <li><a href="Servicios.html"> Servicios incluidos</a></li>
+                                <li>Servicios adicionales</li>
+                                <li>¿Qué necesitas para alquilar?</li>
+                                <li>¿Qué incluye el precio ofrecido?</li>
+                                <li>Información adicional</li>
+                                <li>Términos y condiciones</li>
                             </ul>
                         </section>
 
@@ -206,7 +205,7 @@
                                 </li>
                                 <li>
                                     <img src="static/images/pic06.jpg" alt="" />
-                                    <p>"Seamos realistas. ¡ Hagamos lo imposible."</p>
+                                    <p>"Seamos realistas. ¡ Hagamos lo imposible. !"</p>
                                     <span>Johan Gamez, Web Design</span>
                                 </li>
                                 <li>
@@ -235,39 +234,21 @@
 
                         <!-- Links -->
                         <section>
-                            <h2>Links to Important Stuff</h2>
+                            <h2>Siguenos</h2>
                             <div>
                                 <div class="row">
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Facebook</a></li>
+                                            <br>
+                                            <li><a href="#">Twitter</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Instagram</a></li>
+                                            <br>
+                                            <li><a href="#">LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -275,7 +256,7 @@
                         </section>
 
                     </div>
-                    <div class="col-4 col-12-medium imp-medium">
+                    <div class="col-4 col-10-medium imp-medium">
 
                         <!-- Blurb -->
                         <section>
@@ -284,18 +265,18 @@
                                 <strong>
 									Direccion:
 									<br>
-								</strong> Calle 93 Nº 49-14 Barrio La Castellana - Bogotá, Colombia.
+								</strong> Carrera 13 Nº 65-10 Barrio Chapinero - Bogotá, Colombia.
                             </div>
                             <div>
                                 <strong>PBX:</strong>
-                                <a>(1) 7036605</a>
+                                (1) 5461600
                                 <br>
                                 <strong>Móvil</strong>
-                                <a>+57 (311) 2272723</a>
+                                +57 (318) 6625068
                             </div>
                             <div>
                                 <strong>Email:</strong>
-                                <a>informacion@miscarritos.com</a>
+                                <a>skillex.gaes@gmail.com</a>
                             </div>
                         </section>
 
@@ -306,7 +287,7 @@
 
         <!-- Copyright -->
         <div id="copyright">
-            &copy; Skillex. All rights reserved. | Design: <a href="http://html5up.net">SKILLEX</a>
+            &copy; Skillex. All rights reserved. | Design: SKILLEX
         </div>
 
     </div>
