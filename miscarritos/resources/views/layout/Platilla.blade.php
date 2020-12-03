@@ -28,7 +28,6 @@
                             <a href="{{URL::route('solicitar')}}">Two Column #1</a>
                             <a href="#">Two Column #2</a>
                             <a href="">Contactenos</a>
-                            
                         </nav>
 
                     </div>
@@ -127,7 +126,7 @@
     <!-- Scripts -->
     <script src="{{asset('js/jquery-3.3.1.min.js') }}" ></script>
     <script src="{{asset('js/popper.min.js') }}" ></script>
-    
+
     <!--<script src="static/assets/js/jquery.min.js"></script>-->
     <script src="static/assets/js/browser.min.js"></script>
     <script src="static/assets/js/breakpoints.min.js"></script>
