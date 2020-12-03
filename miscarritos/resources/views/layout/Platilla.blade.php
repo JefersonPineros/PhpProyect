@@ -27,7 +27,7 @@
                             <a href="{{ URL::route('servicios')}}">Servicios</a>
                             <a href="{{URL::route('solicitar')}}">Two Column #1</a>
                             <a href="#">Two Column #2</a>
-                            <a href="">Contactenos</a>
+                            
                             
                         </nav>
 

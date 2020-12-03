@@ -42,9 +42,15 @@
                         <div class="form-group row">
                             <label for="tipo" class="col-md-4 col-form-label text-md-right">{{ __('Tipo De Identificacion') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="tipo_Identificacion" type="text" class="form-control" name="tipo_Identificacion" value="{{ old('tipo_Identificacion') }}" required autocomplete="tipo">
-
+                           <div class="col-md-6">
+                               <!--  <input id="tipo_Identificacion" type="text" class="form-control" name="tipo_Identificacion" value="{{ old('tipo_Identificacion') }}" required autocomplete="tipo">-->
+                                  
+<select id="tipo_Identificacion" type="text" class="form-control" name="tipo_Identificacion" value="{{ old('tipo_Identificacion') }}" required autocomplete="tipo">
+    <option value="" selected="selected">Elije una Opción </option> 
+   <option value="cc">Cedula </option> 
+   <option value="nit">Nit</option> 
+  
+</select>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -64,6 +70,35 @@
                                     </span>
                                 @enderror
                             </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="tipo" class="col-md-4 col-form-label text-md-right">{{ __('Direccion') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="direccion" type="text" class="form-control" name="direccion" value="{{ old('direccion') }}" required autocomplete="tipo">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        
+                        </div>
+                        <div class="form-group row">
+                            <label for="tipo" class="col-md-4 col-form-label text-md-right">{{ __('telefono') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="telefono" type="number" class="form-control" name="telefono" value="{{ old('telefono') }}" required autocomplete="tipo" maxlength="10">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        
                         </div>
 
                         <div class="form-group row">
