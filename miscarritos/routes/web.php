@@ -16,6 +16,14 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Route::get('/', function () {
+    return view('index');
+});
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('/', [MiscarritosController::class, 'index']);
@@ -28,7 +36,5 @@ Route::get('solicitar', [MiscarritosController::class, 'solicitar'])->name('soli
 
 Route::get('nosotros', [MiscarritosController::class, 'nosotros'])->name('nosotros');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

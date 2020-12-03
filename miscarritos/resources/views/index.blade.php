@@ -7,9 +7,15 @@
             <div class="col-6 col-12-medium">
 
                 <!-- Banner Copy -->
-                <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
-                <a href="#" class="button-large">Click aquí!</a>
-
+               <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
+                            
+                    @if (Route::has('login'))
+                   
+                        <a href="{{ route('login') }}" class="button-large" style="margin-left:10% ;background: #009688;box-shadow:none">Login</a>
+                    @endif
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="button-large " style="margin-left: 12%;background:#F5F34B;box-shadow:none">Registro</a>
+                    @endif
             </div>
             <div class="col-6 col-12-medium imp-medium">
 
