@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Mis Carritos.com</title>
+    <title>MisCarritos.com</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="static/assets/css/main.css"/>
@@ -25,8 +25,8 @@
                         <nav id="nav">
                             <a href="{{ URL::route('nosotros')}}" >Nosotros</a>
                             <a href="{{ URL::route('servicios')}}">Servicios</a>
-                            <a href="{{URL::route('solicitar')}}">Two Column #1</a>
-                            <a href="#">Two Column #2</a>
+                            <a href="{{URL::route('solicitar')}}">Información Adicional</a>
+                            <a href="#">Reserva</a>
                             <a href="">Contactenos</a>
                         </nav>
 
@@ -47,39 +47,21 @@
 
                         <!-- Links -->
                         <section>
-                            <h2>Links to Important Stuff</h2>
+                            <h2>Siguenos</h2>
                             <div>
                                 <div class="row">
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Facebook</a></li>
+                                            <br>
+                                            <li><a href="#">Twitter</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-3 col-12-small">
+                                    <div class="col-4 col-12-medium imp-medium">
                                         <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-3 col-12-small">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Neque amet dapibus</a></li>
-                                            <li><a href="#">Sed mattis quis rutrum</a></li>
-                                            <li><a href="#">Accumsan suspendisse</a></li>
-                                            <li><a href="#">Eu varius vitae magna</a></li>
+                                            <li><a href="#">Instagram</a></li>
+                                            <br>
+                                            <li><a href="#">LinkedIn</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -96,18 +78,18 @@
                                 <strong>
 									Direccion:
 									<br>
-								</strong> Calle 93 Nº 49-14 Barrio La Castellana - Bogotá, Colombia.
+								</strong>Carrera 13 N° 65-10 Barrio Chapinero - Bogotá, Colombia.
                             </div>
                             <div>
                                 <strong>PBX:</strong>
-                                <a>(1) 7036605</a>
+                                <a>(1) 5461600</a>
                                 <br>
                                 <strong>Móvil</strong>
-                                <a>+57 (311) 2272723</a>
+                                <a>+57 (318) 6625068</a>
                             </div>
                             <div>
                                 <strong>Email:</strong>
-                                <a>informacion@miscarritos.com</a>
+                                <a>skillex.gaes@gmail.com</a>
                             </div>
                         </section>
 
@@ -118,7 +100,7 @@
 
         <!-- Copyright -->
         <div id="copyright">
-            &copy; Skillex. All rights reserved. | Design: <a href="http://html5up.net">SKILLEX</a>
+            &copy; Skillex. All rights reserved. | Design: Raven Design
         </div>
 
     </div>
