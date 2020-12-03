@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `miscarritos`
 --
-CREATE DATABASE IF NOT EXISTS `miscarritos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `miscarritos`;
+CREATE DATABASE IF NOT EXISTS `miscarritos.com` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `miscarritos.com`;
 
 -- --------------------------------------------------------
 
