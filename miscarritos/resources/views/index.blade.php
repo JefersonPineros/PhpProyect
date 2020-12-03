@@ -10,9 +10,9 @@
 
                 <!-- Banner Copy -->
                <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
-                   @guest         
+                   @guest
                     @if (Route::has('login'))
-                   
+
                         <a href="{{ route('login') }}" class="button-large" style="margin-left:10% ;background: #009688;box-shadow:none" >Login</a>
                     @endif
                     @if (Route::has('register'))
@@ -30,6 +30,8 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
