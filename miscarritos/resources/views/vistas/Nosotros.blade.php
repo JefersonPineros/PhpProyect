@@ -47,8 +47,6 @@
         </section>
 @endsection
 @section('content')
-
-
        <!-- Content -->
        <section id="content">
             <div class="container">
@@ -63,6 +61,7 @@
                                     <h2>Nuestro Equipo</h2>
                                     <h3>Conoce nuestro equipo de trabajo</h3>
                                 </header>
+
                                 <ul class="quote-list">
                                     <li>
                                         <img src="static/images/pic07.jpg" alt="" />

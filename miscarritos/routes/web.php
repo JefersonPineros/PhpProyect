@@ -24,7 +24,7 @@ Route::get('index', [MiscarritosController::class, 'index'])->name('index');
 
 Route::get('servicios', [MiscarritosController::class, 'servicios'])->name('servicios');
 
-Route::get('solicitar', [MiscarritosController::class, 'solicitar'])->name('solicitar');
+Route::get('adicional', [MiscarritosController::class, 'adicional'])->name('adicional');
 
 Route::get('nosotros', [MiscarritosController::class, 'nosotros'])->name('nosotros');
 

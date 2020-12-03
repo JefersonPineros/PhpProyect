@@ -1,59 +1,16 @@
 @extends('layout.Platilla')
-
+@section('css')
+    <link rel="stylesheet" href="static/assets/css/tarjetas.css">
+@endsection
 @section('presentacion')
 <div id="banner">
-    <div class="nav">
-        <ul class="navbar-nav ml-auto">
-            <!-- Authentication Links -->
-            @guest
-                @if (Route::has('login'))
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                    </li>
-                @endif
-
-                @if (Route::has('register'))
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    </li>
-                @endif
-            @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
-                    </a>
-
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
-            @endguest
-        </ul>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-6 col-12-medium">
 
                 <!-- Banner Copy -->
-<<<<<<< .mine
                <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
-=======
-                <p>Elige el carro que necesitas y empieza a disfrutar de tu viaje ...</p>
->>>>>>> .theirs
 
-<<<<<<< .mine
-
-=======
-                            <a href="#" class="button-large">Inicia sesión!</a>
->>>>>>> .theirs
                     @if (Route::has('login'))
 
                         <a href="{{ route('login') }}" class="button-large" style="margin-left:10% ;background: #009688;box-shadow:none">Login</a>
@@ -90,7 +47,7 @@
                                     <figcaption>Bajo costo</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul  class="lista-tarjeta">
                                     <li>Los vehículos de bajo costo se caracterizan por su construcción sumamente económicos, siendo hecho en materiales resistentes más no de alta calidad.</li>
                                 </ul>
                             </div>
@@ -130,7 +87,7 @@
                                     <figcaption>Vehículo familiar</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Los vehículos familiares se caracterizan por sus amplias magnitudes tanto en el exterior como en el interior que permiten el traslado de un grupo familiar (en base a un grupo familiar de cuatro a cinco miembros).</li>
                                 </ul>
                             </div>
@@ -170,7 +127,7 @@
                                     <figcaption>Sedanes</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Vehículos caracterizados por la presentación de su diseño peculiar que se caracteriza por un capo de gran amplitud, como también por la segmentación del maletero de los asientos, con la finalidad de aportar mayor tamaño
                                         en el interior.</li>
                                 </ul>
@@ -213,7 +170,7 @@
                                     <figcaption>Vehículo de lujo</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Son considerados vehículos de alta gama, tanto por los materiales que los componen como por las características que los mismos pueden aportar, se caracterizan por disponer de un diseño elegante y de amplitud.</li>
                                 </ul>
                             </div>
@@ -253,7 +210,7 @@
                                     <figcaption>Deportivos</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Se distingue por su aspecto, luciendo similar a los autos de carrera, se caracterizan por ser de pequeñas proporciones como también por circular a altas velocidades, de modo tal que su aspecto relevante lo constituyen
                                         sus motores.</li>
                                 </ul>
@@ -294,7 +251,7 @@
                                     <figcaption>Todoterreno</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Vehículos que cuentan con un diseño compacto y con una apariencia imponente, los mismos se caracterizan por presentar un alto sistema de tracción que permite su circulación en terrenos rústicos y desiguales.</li>
                                 </ul>
                             </div>
@@ -336,7 +293,7 @@
                                     <figcaption>Comerciales</figcaption>
                                 </figure>
 
-                                <ul>
+                                <ul class="lista-tarjeta">
                                     <li>Son aquellos vehículos diseñados con el fin de transportar bien sea personas o materiales, estos pueden variar en su tamaño como en la calidad de los materiales.</li>
                                 </ul>
                             </div>

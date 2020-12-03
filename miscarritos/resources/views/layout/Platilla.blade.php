@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="static/assets/css/main.css"/>
+    @yield('css')
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                         <nav id="nav">
                             <a href="{{ URL::route('nosotros')}}" >Nosotros</a>
                             <a href="{{ URL::route('servicios')}}">Servicios</a>
-                            <a href="{{URL::route('solicitar')}}">Información Adicional</a>
+                            <a href="{{URL::route('adicional')}}">Información Adicional</a>
                             <a href="#">Reserva</a>
                             <a href="">Contactenos</a>
                         </nav>
