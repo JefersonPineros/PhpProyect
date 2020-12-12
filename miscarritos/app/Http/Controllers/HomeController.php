@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -26,8 +27,10 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function dash()
-    {
-        return view('dashboard');
+    public function pruebaConsulta() {
+        $usuario = DB::select('SELECT * FROM users', [1]);
+        foreach($usuario as $user){
+            echo $user->nombre;
+        }
     }
 }
