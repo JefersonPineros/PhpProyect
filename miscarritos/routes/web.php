@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MiscarritosController;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use App\Models\Role;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +34,17 @@ Route::get('nosotros', [MiscarritosController::class, 'nosotros'])->name('nosotr
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
+
+
+Route::get('/prueba', function(){
+//$user = User::find(2)->role;
+//$user = User::find(1)->roles->descripcion;
+//return $user;
+
+
+$rol = Auth::user()->role->descripcion;
+return $rol;
+});
 
