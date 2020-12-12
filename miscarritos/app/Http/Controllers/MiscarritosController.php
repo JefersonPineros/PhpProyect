@@ -10,13 +10,18 @@ class MiscarritosController extends Controller
     {
         return view('index');
     }
+    public function dash()
+    {
+        return view('dashboard');
+    }
     public function servicios(){
         return view('vistas/Servicios');
     }
     public function adicional(){
         return view('vistas/InfoAdicional');
     }
-    public function nosotros() {
+    public function nosotros(){
         return view('vistas/Nosotros');
     }
+      
 }
