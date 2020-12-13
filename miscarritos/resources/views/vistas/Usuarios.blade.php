@@ -1,6 +1,12 @@
 @extends('layout.dashboard')
-
+@php
+    use App\Http\Controllers\UsuariosController;
+    $usuario = UsuariosController::get_AllUsers();
+@endphp
 @section('content')
+@foreach ($usuario as $item)
+    {{$item->name}}
+@endforeach
 <div class="row">
     <div class="col">
       <div class="card bg-default shadow">
@@ -23,7 +29,7 @@
               <tr>
                 <th scope="row">
                   <div class="media align-items-center">
-                    
+
                     <div class="media-body">
                       <span class="name mb-0 text-sm">Argon Design System</span>
                     </div>
