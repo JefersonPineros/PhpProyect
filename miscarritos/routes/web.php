@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MiscarritosController;
@@ -25,7 +26,7 @@ Route::get('/', [MiscarritosController::class, 'index']);
 
 Route::get('index', [MiscarritosController::class, 'index'])->name('index');
 
-Route::get('servicios', [MiscarritosController::class, 'servicios'])->name('servicios');
+Route::get('servicios', [AdminController::class, 'servicios'])->name('servicios');
 
 Route::get('adicional', [MiscarritosController::class, 'adicional'])->name('adicional');
 
@@ -35,16 +36,9 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-
-
-
 Route::get('/prueba', function(){
-//$user = User::find(2)->role;
-//$user = User::find(1)->roles->descripcion;
-//return $user;
-
-
-$rol = Auth::user()->role->descripcion;
-return $rol;
-});
+        $rol = Auth::user()->role->descripcion;
+        return $rol;
+    }
+);
 
