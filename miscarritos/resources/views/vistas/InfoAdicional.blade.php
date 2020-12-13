@@ -2,95 +2,106 @@
 
 @section('presentacion')
 <section id="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-6-medium col-6-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-6-medium col-12-small">
 
-                <!-- Feature #1 -->
-                <section>
-                    <h2>¿Qué necesitas para alquilar?</h2>
-                    <p>
-                        ¿Qué me exigen para alquilar un vehículo?
-                        <br>* Ser adulto mayor de 21 años. Aplican recargos adicionales para usuarios con edad entre 18 y 20 años.
-                        <br>* Identificación o Pasaporte vigente.
-                        <br>* Licencia de Conducción vigente (Nacional o Extranjera).
-                        <br>* Tarjeta de Crédito como garantía/depósito del Contrato de Alquiler: Tarjeta de crédito con cupo disponible de $1.500.000 COP para autos económicos, $2.500.00 COP familiares y camionetas pequeñas y $3.500.00 COP para
-                        camionetas 7 puestos.
-                    </p>
-                </section>
+                        <!-- Feature #1 -->
+                        <section>
+                            <a class="bordered-feature-image"><img src="static/images/incluye.jpg" /></a>
+                            <h2>¿Qué incluye el precio ofrecido?</h2>
+                            <p>
+                                Kilometraje Libre en todo el territorio nacional Colombiano. Si tu alquiler es por un mes ó más, incluyen 4000 kilómetros máximo.
+                                <br>Servicio de asistencia en viaje y grúa las 24 horas del día.
+                                <br>Seguros de Protección:
+                                <br> I. Seguro de responsabilidad civil contra terceros.
+                                <br> II. Seguro parcial por daños y/o robo, con deducible máximo del valor de la garantía/deposito.
+                                <br>Un (1) solo conductor quien firma el contrato propietario de la tarjeta de crédito. Si deseas que otra persona también maneje aparte de ti, aplicarán cargos adicionales.
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-4 col-6-medium col-12-small">
+
+                        <!-- Feature #2 -->
+                        <section>
+                            <a class="bordered-feature-image"><img src="static/images/alquiler.jpg" /></a>
+                            <h2>¿Qué más debo saber?</h2>
+                            <p>
+                                Combustible y Lavado
+
+                                <br>1. Combustible: El vehículo se entrega con el tanque lleno. El combustible faltante se cobrará tomándose un valor del combustible más un cargo administrativo.
+
+                                <br>2. Lavado: el vehículo se entrega limpio y debe ser devuelto en las mismas condiciones. Si usted desea ahorrar y prepagar el servicio, este tendrá un costo de $21.420 pesos para Automoviles y para Camionetas $ 26.180
+                                pesos. En caso de ser devuelto sucio interna y/o externamente, se cobrará un valor diferente. Consulte con la agencia directamente en caso que tenga alguna duda.
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-4 col-6-medium col-12-small">
+
+                        <!-- Feature #3 -->
+                        <section>
+                            <a class="bordered-feature-image"><img src="static/images/garantia.jpeg" /></a>
+                            <h2>Que otras políticas debo saber?</h2>
+                            <p>
+                                1. Se garantiza la disponibilidad de un vehículo escogido en línea (Pagina Web) perteneciente a la gama alquilada (Ejemplo: Económico), pero el vehículo puede diferir al reservado en marca y color.
+
+                                <br>2. Horas Extras: aplican únicamente a partir de la hora 25 de su contrato de alquiler por un máximo de 4 horas. A partir de la cuarta hora se cobrará el día completo de renta. Costo por hora: 1/4 de la tarifa diaria
+                                del vehículo.
+
+                                <br>3. La cancelación de esta reserva puede realizarse hasta 24 horas antes del día y hora de entrega del vehículo.
+                            </p>
+                        </section>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="col-6 col-6-medium col-6-small">
-                <!-- Feature #2 -->
-                <section>
-                    <h2>¿Medios de Pago para pagar el alquiler?</h2>
-                    <p>
-
-                        El pago del alquiler de su vehículo puede realizarse en tarjeta débito ó tarjeta de crédito Visa y Mastercard (No se acepta AMEX ó DINERS) en la agencia al recoger el vehículo. **No se acepta efectivo**
-                        <br><br>Importante para tener en cuenta!<br>
-                        <br> Cupo de Garantía/Depósito tomado de la tarjeta de crédito: El cupo de la Tarjeta de crédito es para avalar la garantía, esta suma permanecerá congelada durante el tiempo de alquiler del vehículo. Al finalizar el servicio
-                        se solicita el desbloqueo del cupo a la franquicia correspondiente. Posteriormente, el trámite tarda hasta 20 días hábiles dependiendo de la entidad bancaria.
-                        <br> Tarjetas de Crédito NO aceptadas para pago en agencia ó creación de deposito: La rentadora NO acepta tarjetas prepago, virtuales ó cualquier otro tipo de tarjeta que no tenga los números o estampado en relieve para
-                        la creación de la garantía. Tarjetas de Crédito Marca propia de cualquier establecimiento no bancario, NO son aceptadas, excepto que cuenten con las franquicias mundiales como VISA y Mastercard. Aplican condiciones y restricciones.
-                        Por favor referirse a las políticas de la rentadora directamente.
-                    </p>
-                </section>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 @endsection
 @section('content')
 <section id="content">
-    <div class="container">
-        <div class="row aln-center">
-            <div class="col-6 col-8-medium">
+            <div class="container">
+                <div class="row aln-center">
+                    <div class="col-6 col-8-medium">
 
-                <!-- Box #1 -->
-                <section>
-                    <h2>¿Qué incluye el precio ofrecido?</h2>
-                    <p>
-                        Kilometraje Libre en todo el territorio nacional Colombiano. Si tu alquiler es por un mes ó más, incluyen 4000 kilómetros máximo.
-                        <br>Servicio de asistencia en viaje y grúa las 24 horas del día.
-                        <br>Seguros de Protección:
-                        <br> I. Seguro de responsabilidad civil contra terceros.
-                        <br> II. Seguro parcial por daños y/o robo, con deducible máximo del valor de la garantía/deposito.
-                        <br>Un (1) solo conductor quien firma el contrato propietario de la tarjeta de crédito. Si deseas que otra persona también maneje aparte de ti, aplicarán cargos adicionales.
-                    </p>
-                </section>
+                        <!-- Box #1 -->
+                        <section>
+                            <a class="bordered-feature-image"><img src="static/images/condicion.jpg" /></a>
+                            <h2>¿Qué necesitas para alquilar?</h2>
+                            <p>
+                                ¿Qué me exigen para alquilar un vehículo?
+                                <br>* Ser adulto mayor de 21 años. Aplican recargos adicionales para usuarios con edad entre 18 y 20 años.
+                                <br>* Identificación o Pasaporte vigente.
+                                <br>* Licencia de Conducción vigente (Nacional o Extranjera).
+                                <br>* Tarjeta de Crédito como garantía/depósito del Contrato de Alquiler: Tarjeta de crédito con cupo disponible de $1.500.000 COP para autos económicos, $2.500.00 COP familiares y camionetas pequeñas y $3.500.00 COP para
+                                camionetas 7 puestos.
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-6 col-8-medium">
+
+                        <!-- Box #2 -->
+                        <section>
+                            <h2>¿Medios de Pago para pagar el alquiler?</h2>
+                            <p>
+                                El pago del alquiler de su vehículo puede realizarse en tarjeta débito ó tarjeta de crédito Visa y Mastercard (No se acepta AMEX ó DINERS) en la agencia al recoger el vehículo.
+                                <br> **No se acepta efectivo**
+                                <br>
+                                <br>Importante para tener en cuenta!<br>
+                                <br> Cupo de Garantía/Depósito tomado de la tarjeta de crédito: El cupo de la Tarjeta de crédito es para avalar la garantía, esta suma permanecerá congelada durante el tiempo de alquiler del vehículo. Al finalizar el servicio
+                                se solicita el desbloqueo del cupo a la franquicia correspondiente. Posteriormente, el trámite tarda hasta 20 días hábiles dependiendo de la entidad bancaria.
+                                <br> Tarjetas de Crédito NO aceptadas para pago en agencia ó creación de deposito: La rentadora NO acepta tarjetas prepago, virtuales ó cualquier otro tipo de tarjeta que no tenga los números o estampado en relieve para
+                                la creación de la garantía. Tarjetas de Crédito Marca propia de cualquier establecimiento no bancario, NO son aceptadas, excepto que cuenten con las franquicias mundiales como VISA y Mastercard. Aplican condiciones y restricciones.
+                                Por favor referirse a las políticas de la rentadora directamente.
+                            </p>
+                        </section>
+
+                    </div>
+                </div>
             </div>
-
-            <div class="col-6 col-8-medium">
-
-                <!-- Box #2 -->
-                <section>
-
-                    <h2>¿Qué más debo saber?</h2>
-
-                    <p>
-                        Combustible y Lavado
-
-                        <br>1. Combustible: El vehículo se entrega con el tanque lleno. El combustible faltante se cobrará tomándose un valor del combustible más un cargo administrativo.
-
-                        <br>2. Lavado: el vehículo se entrega limpio y debe ser devuelto en las mismas condiciones. Si usted desea ahorrar y prepagar el servicio, este tendrá un costo de $21.420 pesos para Automoviles y para Camionetas $ 26.180
-                        pesos. En caso de ser devuelto sucio interna y/o externamente, se cobrará un valor diferente. Consulte con la agencia directamente en caso que tenga alguna duda.
-
-                        <h2>Que otras políticas debo saber?</h2>
-
-                        <br>1. Se garantiza la disponibilidad de un vehículo escogido en línea (Pagina Web) perteneciente a la gama alquilada (Ejemplo: Económico), pero el vehículo puede diferir al reservado en marca y color.
-
-                        <br>2. Horas Extras: aplican únicamente a partir de la hora 25 de su contrato de alquiler por un máximo de 4 horas. A partir de la cuarta hora se cobrará el día completo de renta. Costo por hora: 1/4 de la tarifa diaria
-                        del vehículo.
-
-                        <br>3. La cancelación de esta reserva puede realizarse hasta 24 horas antes del día y hora de entrega del vehículo.
-                    </p>
-                </section>
-
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 <!-- Features -->
 <section id="features">
