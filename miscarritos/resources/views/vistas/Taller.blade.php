@@ -14,16 +14,8 @@
           </div>
           <form onsubmit="">
             <div class="form-group">
-                <label for="example-text-input" class="form-control-label">Dueño del Vehículo</label>
-                <input class="form-control" type="text" value="{{$revision->descripcion}}"  placeholder="Nombre" id="example-text-input">
-            </div>
-            <div class="form-group">
                 <label for="example-text-input" class="form-control-label">Placa del Vehículo</label>
                 <input class="form-control" type="text" value="Placa" id="example-text-input">
-            </div>
-            <div class="form-group">
-                <label for="example-email-input" class="form-control-label">Email</label>
-                <input class="form-control" type="email" value="nombre@example.com" id="example-email-input">
             </div>
             <div class="form-group">
                 <label for="example-date-input" class="form-control-label">Fecha de Revisión</label>
@@ -32,11 +24,11 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect1" class="form-control-label">Estado Actual del Vehículo</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Excelente</option>
-                    <option>Bueno</option>
-                    <option>Regular</option>
-                    <option>Malo</option>
-                    <option>Deficiente</option>
+                    <option value=''>Excelente</option>
+                    <option value=''>Bueno</option>
+                    <option value=''>Regular</option>
+                    <option value=''>Malo</option>
+                    <option value=''>Deficiente</option>
                 </select>
               </div>
               <div class="form-group">

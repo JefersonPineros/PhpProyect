@@ -68,6 +68,7 @@ class VehiculosController extends Controller
         }
         return $veh;
     }
+    
     public static function update_vehiculo($vehiculo){
         return Vehiculos::updated(
             [

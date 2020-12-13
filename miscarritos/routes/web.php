@@ -40,8 +40,13 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
  */
 Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
 
+Route::post('usuario', [UsuariosController::class, 'crearUsuario'])->name('usuario');
 
 //Captura de sesiones
+
+/**
+ * pruebas gamez    
+ */
 
 Route::get('/prueba', function(){
 //$user = User::find(2)->role;

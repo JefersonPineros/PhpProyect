@@ -9,6 +9,34 @@ use Illuminate\Support\Facades\DB;
 
 class UsuariosController extends Controller
 {
+    /**
+     * Wainer
+     */
+    
+    public function crearUsuario(Request $request){
+        DB::insert('INSERT into users (
+            name,
+            tipo_Identificacion,
+            numero_Identificacion,
+            email,
+            direccion,
+            telefono,
+            password,
+            role_id
+            ) values (?, ?, ?, ?, ?, ?, ?, ?)', [
+                $request->get('name'),
+                $request->get('tipo_Identificacion'),
+                $request->get('numero_Identificacion'),
+                $request->get('email'),
+                $request->get('direccion'),
+                $request->get('telefono'),
+                $request->get('password'),
+                $request->get('role_id')
+                ]
+            );
+        return view('vistas/Usuarios');
+    }
+
     public function usuario(){
         return view('vistas/Usuarios');
     }
@@ -29,7 +57,7 @@ class UsuariosController extends Controller
             $user->direccion = $item->direccion;
             $user->telefono = $item->telefono;
             $user->password = $item->password;
-            $user->rol_id = $item->role_id;
+            $user->role_id = $item->role_id;
         }
 
         return $user;
