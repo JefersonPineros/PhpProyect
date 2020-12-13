@@ -11,23 +11,36 @@ class VehiculosController extends Controller
     public function vehiculos(){
         return view('vistas/Vehiculos');
     }
+    public  function store(Request $request){
+        return $request;
+    }
 
-    public static function crearVehiculo($vehiculo){
-        return Vehiculos::create(
-            [
-                'idvehiculo' => $vehiculo['idvehiculo'],
-                'marca' => $vehiculo['marca'],
-                'modelo' => $vehiculo['modelo'],
-                'placa' => $vehiculo['placa'],
-                'cantidad_pasajeros' => $vehiculo['cantidad_pasajerons'],
-                'color' => $vehiculo['color'],
-                'numero_puertas' => $vehiculo['numero_puertas'],
-                'capacidad_carga' => $vehiculo['capacidad_carga'],
-                'tipo_vehiculo_idtipo_vehiculo' => $vehiculo['tipo_vehiculo_idtipo_vehiculo'],
-                'alquiler_idalquiler' => $vehiculo['alquiler_idalquiler'],
-                'reservas_idreservas' => $vehiculo['reservas_idreservas']
-            ]
-        );
+    public static function crearVehiculo(Request $request){
+        DB::insert('INSERT into vehiculos (
+            marca,
+            modelo,
+            placa,
+            cantidad_pasajeros,
+            color,
+            numero_puertas,
+            capacidad_carga,
+            tipo_vehiculo_idtipo_vehiculo,
+            alquiler_idalquiler,
+            reserva_idreservas
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [
+                $request->get('marca'),
+                $request->get('modelo'),
+                $request->get('placa'),
+                $request->get('cantidad_pasajeros'),
+                $request->get('color'),
+                $request->get('numero_puertas'),
+                $request->get('capacidad_carga'),
+                1,
+                null,
+                null
+                ]
+            );
+        return view('vistas/Vehiculos');
     }
 
     public static function get_AllVehiculos(){

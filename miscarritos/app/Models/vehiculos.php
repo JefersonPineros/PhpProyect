@@ -25,7 +25,7 @@ class Vehiculos extends Model
         'capacidad_carga',
         'tipo_vehiculo_idtipo_vehiculo',
         'alquiler_idalquiler',
-        'reservas_idreservas'
+        'reserva_idreservas'
     ];
     /**
      * The primary key associated with the table.
