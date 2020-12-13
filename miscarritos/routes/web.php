@@ -36,7 +36,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
 /**
- * Configuracion metodos post de consulta
+ * Configuracion metodos post
  */
 Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
 
