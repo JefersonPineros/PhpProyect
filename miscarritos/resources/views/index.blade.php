@@ -1,4 +1,5 @@
 @extends('layout.Platilla')
+
 @section('css')
     <link rel="stylesheet" href="static/assets/css/tarjetas.css">
 @endsection
@@ -39,9 +40,9 @@
                                 </div>
                             </li>
                         @endguest
+
             </div>
             <div class="col-6 col-12-medium imp-medium">
-
                 <!-- Banner Image -->
                 <a class="bordered-feature-image"><img src="static/images/banner.jpg"/></a>
 
