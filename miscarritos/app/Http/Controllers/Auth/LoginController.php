@@ -47,16 +47,16 @@ class LoginController extends Controller
        $rol = Auth::user()->role->descripcion;
         switch ($rol) {
             case 'administrador':
-                return 'home';
+                return 'usuarios';
                 break;
                 case 'almacenista':
                 return 'prueba';
                 break;
                 case 'mecanico':
-                return 'prueba';
+                return 'taller';
                 break;
                 case 'cliente':
-                return 'prueba';
+                return 'index';
                 break;
         }
     }

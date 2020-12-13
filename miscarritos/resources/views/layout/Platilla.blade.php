@@ -28,7 +28,7 @@
                             <a href="{{ URL::route('servicios')}}">Servicios</a>
                             <a href="{{URL::route('adicional')}}">Información Adicional</a>
                             <a href="#">Reserva</a>
-                            <a href="#">Dashboard</a>
+                            <a href="#">Alquiler</a>
                         </nav>
 
                     </div>

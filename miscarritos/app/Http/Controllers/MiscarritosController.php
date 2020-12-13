@@ -10,10 +10,6 @@ class MiscarritosController extends Controller
     {
         return view('index');
     }
-    public function dash()
-    {
-        return view('dashboard');
-    }
     public function servicios(){
         return view('vistas/Servicios');
     }
@@ -23,5 +19,19 @@ class MiscarritosController extends Controller
     public function nosotros(){
         return view('vistas/Nosotros');
     }
-      
+    public function usuarios(){
+        return view('vistas/Usuarios');
+    }
+    public function taller(){
+        return view('vistas/Taller');
+    }
+    public function vehiculos(){
+        return view('vistas/Vehiculos');
+    }
+    public function reserva(){
+        return view('vistas/Reserva');
+    }
+    public function alquiler(){
+        return view('vistas/Alquiler');
+    }
 }
