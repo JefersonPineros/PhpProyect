@@ -3,25 +3,19 @@
 @section('content')
 
 <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8">
+    <div class="col-lg-5 col-md-8">
       <div class="card bg-secondary border-0">
-        <div class="card-body px-lg-5 py-lg-5">
+        <div class="card-body px-lg-6 py-lg-6">
           <div class="text-center text-muted mb-4">
             <h1>Reporte de Revisión</h1>
-          </div>
-          <form>
-            <div class="form-group">
-                <label for="example-text-input" class="form-control-label">Dueño del Vehículo</label>
-                <input class="form-control" type="text" value="Nombre" id="example-text-input">
-            </div>
+        </div>
+        <form>
+            
             <div class="form-group">
                 <label for="example-text-input" class="form-control-label">Placa del Vehículo</label>
                 <input class="form-control" type="text" value="Placa" id="example-text-input">
             </div>
-            <div class="form-group">
-                <label for="example-email-input" class="form-control-label">Email</label>
-                <input class="form-control" type="email" value="nombre@example.com" id="example-email-input">
-            </div>
+            
             <div class="form-group">
                 <label for="example-date-input" class="form-control-label">Fecha de Revisión</label>
                 <input class="form-control" type="date" value="2018-11-23" id="example-date-input">
@@ -47,5 +41,6 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
+
 @endsection
