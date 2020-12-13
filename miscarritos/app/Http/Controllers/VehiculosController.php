@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class VehiculosController extends Controller
 {
+    public $idVehiculo;
+
     public function vehiculos(){
         return view('vistas/Vehiculos');
     }
@@ -68,25 +70,21 @@ class VehiculosController extends Controller
         }
         return $veh;
     }
-    public static function update_vehiculo($vehiculo){
-        return Vehiculos::updated(
-            [
-                'idvehiculo' => $vehiculo['idvehiculo'],
-                'marca' => $vehiculo['marca'],
-                'modelo' => $vehiculo['modelo'],
-                'placa' => $vehiculo['placa'],
-                'cantidad_pasajeros' => $vehiculo['cantidad_pasajerons'],
-                'color' => $vehiculo['color'],
-                'numero_puertas' => $vehiculo['numero_puertas'],
-                'capacidad_carga' => $vehiculo['capacidad_carga'],
-                'tipo_vehiculo_idtipo_vehiculo' => $vehiculo['tipo_vehiculo_idtipo_vehiculo'],
-                'alquiler_idalquiler' => $vehiculo['alquiler_idalquiler'],
-                'reservas_idreservas' => $vehiculo['reservas_idreservas']
-            ]
-        );
+    public static function update_vehiculo(Request $vehiculo){
+        $query = 'UPDATE vehiculos
+            set marca = '.$vehiculo->get('marca').',
+            modelo = '.$vehiculo->get('marca').',
+            placa = '.$vehiculo->get('placa').',
+            cantidad_pasajeros = '.$vehiculo->get('cantidad_pasajeros').',
+            color = '.$vehiculo->get('color').',
+            numero_puertas ='.$vehiculo->get('numero_puertas').',
+            capacidad_carga ='.$vehiculo->get('capacidad_carga');
+        DB::update($query.'where idvehiculo = ?', []);
+        return view('vistas/Vehiculos');
     }
     public static function delete_vehiculo($id)
     {
+        //$consultaVehiculo = VehiculosController::get_vehiculo($id->get('id'));
         try {
             DB::delete('DELETE vehiculos WHERE idvehiculo = ?', [$id]);
             return 'ok';

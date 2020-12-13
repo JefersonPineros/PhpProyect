@@ -4,8 +4,44 @@ use App\Http\Controllers\VehiculosController;
 use App\Models\Vehiculos;
 
 $vehiculos = VehiculosController::get_AllVehiculos();
+$
 @endphp
 @section('content')
+    <div class="row">
+        <div class="col-12" style="padding: 20px ">
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                    <th>Id vehiculo</th>
+                    <th>Marca</th>
+                    <th>Model</th>
+                    <th>placa</th>
+                    <th>Pasajeros</th>
+                    <th>color</th>
+                    <th>Puertas</th>
+                    <th>capacidad</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    @foreach ($vehiculos as $item)
+                        <tr>
+                            <td>{{ $item->idvehiculo }}</td>
+                            <td>{{ $item->marca }}</td>
+                            <td>{{ $item->modelo }}</td>
+                            <td>{{ $item->placa }}</td>
+                            <td>{{ $item->cantidad_pasajeros }}</td>
+                            <td>{{ $item->color }}</td>
+                            <td>{{ $item->numero_puertas }}</td>
+                            <td>{{ $item->capacidad_carga }}</td>
+                            <td>
+                                <button class="btn btn-danger" >X</button>
+                                <button class="btn btn-info">A</button>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div class="row">
         <div class="col-6">
             <div class="card bg-secondary border-0">
@@ -13,7 +49,7 @@ $vehiculos = VehiculosController::get_AllVehiculos();
                     <div class="text-center text-muted mb-4">
                         <h1>Crear vehiculo</h1>
                     </div>
-                    <form method="POST" action="{{route('vehiculos')}}">
+                    <form method="POST" action="{{ route('vehiculos') }}">
                         <div class="row">
                             @csrf
                             <div class="form-group col-12">
@@ -33,8 +69,8 @@ $vehiculos = VehiculosController::get_AllVehiculos();
                             </div>
                             <div class="form-group col-3">
                                 <label for="example-date-input" class="form-control-label">Pasajeros</label>
-                                <input name="cantidad_pasajeros" class="form-control " type="number" placeholder="Cantidad Max pasajeros"
-                                    id="example-date-input">
+                                <input name="cantidad_pasajeros" class="form-control " type="number"
+                                    placeholder="Cantidad Max pasajeros" id="example-date-input">
                             </div>
                             <div class="form-group col-3">
                                 <label for="example-date-input" class="form-control-label">Puertas</label>
@@ -48,12 +84,12 @@ $vehiculos = VehiculosController::get_AllVehiculos();
                             </div>
                             <div class="form-group col-6">
                                 <label for="example-date-input" class="form-control-label">Capacidad de carga</label>
-                                <input name="capacidad_carga" class="form-control " type="text" placeholder="Color del vehiculo"
-                                    id="example-date-input">
+                                <input name="capacidad_carga" class="form-control " type="text"
+                                    placeholder="Color del vehiculo" id="example-date-input">
                             </div>
                             <div class="form-group col-6">
                                 <label for="exampleFormControlSelect1" class="form-control-label">Tipo vehiculo</label>
-                                <select  class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="exampleFormControlSelect1">
                                     <option>Bajo costo</option>
                                     <option>Vehículo familiar</option>
                                     <option>Sedanes</option>
@@ -71,31 +107,8 @@ $vehiculos = VehiculosController::get_AllVehiculos();
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <table id="example" class="display" style="width:100%">
-                <thead>
-                    <th>Id vehiculo</th>
-                    <th>Marca</th>
-                    <th>Model</th>
-                    <th>placa</th>
-                    <th>Pasajeros</th>
-                    <th>color</th>
-                    <th>Puertas</th>
-                    <th>capacidad</th>
-                </thead>
-                <tbody>
-                    @foreach ($vehiculos as $item)
-                        <td>{{$item->idvehiculo}}</td>
-                        <td>{{$item->marca}}</td>
-                        <td>{{$item->modelo}}</td>
-                        <td>{{$item->placa}}</td>
-                        <td>{{$item->cantidad_pasajeros}}</td>
-                        <td>{{$item->color}}</td>
-                        <td>{{$item->numero_puertas}}</td>
-                        <td>{{$item->capacidad_carga}}</td>
-                    @endforeach
-                </tbody>
-            </table>
+        <div>
+            {{$idVehiculo}}
         </div>
     </div>
 @endsection
