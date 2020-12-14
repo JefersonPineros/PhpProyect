@@ -4,13 +4,11 @@ use App\Http\Controllers\UsuariosController;
 use App\Models\User;
 
 $usuarios = UsuariosController::get_AllUsers();
+
 @endphp
 @section('content')
     <div class="row">
-        
-            
-        
-        <div class="col-12">
+        <div class="col-12" style="padding: 20px ">
             <h1 style="text-align: center">Lista Usuarios</h1>
             <table id="example" class="display" style="width:100%">
                 <thead>
@@ -22,6 +20,7 @@ $usuarios = UsuariosController::get_AllUsers();
                     <th>Dirección</th>
                     <th>Teléfono</th>
                     <th>Rol de Usuario</th>
+                    <th>Acciones</th>
                 </thead>
                 <tbody>
                     @foreach ($usuarios as $item)
@@ -34,11 +33,16 @@ $usuarios = UsuariosController::get_AllUsers();
                         <td>{{$item->direccion}}</td>
                         <td>{{$item->telefono}}</td>
                         <td>{{$item->role_id}}</td>
+                        <td>
+                            <button class="btn btn-danger" >X</button>
+                            <button class="btn btn-info">A</button>
+                        </td>
                     <tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
+    </div>
         <div class="col-6">
             <div class="card bg-secondary border-0">
                 <div class="card-body px-lg-5 py-lg-5">
@@ -94,7 +98,7 @@ $usuarios = UsuariosController::get_AllUsers();
                                     <option value='4'>Cliente</option>
                                 </select>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center" style="width: 330%; display: flex; align-items: center; justify-content: center;">
                                 <button type="submit" class="btn btn-primary mt-4">Crear Usuario</button>
                             </div>
                         </div>
@@ -102,7 +106,4 @@ $usuarios = UsuariosController::get_AllUsers();
                 </div>
             </div>
         </div>
-        
-        
-    </div>
 @endsection
