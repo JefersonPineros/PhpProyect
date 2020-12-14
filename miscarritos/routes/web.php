@@ -36,14 +36,16 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+Route::post('alquiler', [AlquilerController::class, 'crearAlquiler'])->name('alquiler');
 
-Route::get('vehiculos/{id}',[VehiculosController::class, 'capturarItem'])->name('vehiculos.ac');
 /**
  * Configuracion metodos post
+ *
  */
-Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
 
-Route::post('alquiler', [AlquilerController::class, 'crearAlquiler'])->name('alquiler');
+Route::get('vehiculos/{id}',[VehiculosController::class, 'capturarItem'])->name('vehiculos.ac');
+Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
+/**
  * Metodos delete
  */
 Route::post('vehiculos/{id}', [VehiculosController::class, 'delete_vehiculo'])->name('vehiculos.de');

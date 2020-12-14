@@ -29,7 +29,7 @@
                             <a href="{{ URL::route('nosotros')}}" >Nosotros</a>
                             <a href="{{ URL::route('servicios')}}">Servicios</a>
                             <a href="{{URL::route('adicional')}}">Información Adicional</a>
-                        <!--    <a href="#">Reserva</a> -->
+                            <a href="">Reservas</a>
                         <!--    <a href="">Contactenos</a> -->
                         </nav>
 
