@@ -14,10 +14,10 @@
                    @guest
                     @if (Route::has('login'))
 
-                        <a href="{{ route('login') }}" class="button-large" style="margin-left:10% ;background: #009688;box-shadow:none" >Login</a>
+                        <a href="{{ route('login') }}" class="button-large" style="background: #CB4335;box-shadow:none" >Inicia sesión!</a>
                     @endif
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="button-large " style="margin-left: 12%;background:#F5F34B;box-shadow:none" >Registro</a>
+                        <a href="{{ route('register') }}" class="button-large " style="background:#CB4335;box-shadow:none" >Registrate!</a>
                     @endif
                     @else
                             <li class="nav-item dropdown">
@@ -379,12 +379,12 @@
                                 <h3>Conoce nuestros servicios</h3>
                             </header>
                             <ul class="check-list">
-                                <li>Información adicional</li>
-                                <li>Servicios incluidos</li>
-                                <li>Servicios adicionales</li>
-                                <li>¿Qué necesitas para alquilar?</li>
-                                <li>¿Qué incluye el precio ofrecido?</li>
-                                <li>Términos y condiciones</li>
+                                <li>Alquiler de vehiculos</li>
+                                <li>Servicios de taller</li>
+                                <li>Servicios de mantenimiento</li>
+                                <li>Reposición de autos</li>
+                                <li>Servicio de asistencia</li>
+                                <li>Seguro de proteccion</li>
                             </ul>
                         </section>
 
