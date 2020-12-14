@@ -29,7 +29,7 @@ class UsuariosController extends Controller
             $user->direccion = $item->direccion;
             $user->telefono = $item->telefono;
             $user->password = $item->password;
-            $user->rol_id = $item->role_id;
+            $user->role_id = $item->role_id;
         }
 
         return $user;

@@ -218,6 +218,7 @@
         });
 
     </script>
+    @yield('scrips')
 </body>
 
 </html>

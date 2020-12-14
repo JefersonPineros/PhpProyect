@@ -2,9 +2,7 @@
 @php
 use App\Http\Controllers\VehiculosController;
 use App\Models\Vehiculos;
-
 $vehiculos = VehiculosController::get_AllVehiculos();
-$
 @endphp
 @section('content')
     <div class="row">
@@ -33,8 +31,14 @@ $
                             <td>{{ $item->numero_puertas }}</td>
                             <td>{{ $item->capacidad_carga }}</td>
                             <td>
-                                <button class="btn btn-danger" >X</button>
-                                <button class="btn btn-info">A</button>
+                                <form method="POST" action="{{ route('vehiculos.de',  $item->idvehiculo)}}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-danger" >X</button>
+                                </form>
+                                <form method="GET" action="{{ route('vehiculos.ac',  $item->idvehiculo)}}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-info click" >A</button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
@@ -49,7 +53,7 @@ $
                     <div class="text-center text-muted mb-4">
                         <h1>Crear vehiculo</h1>
                     </div>
-                    <form method="POST" action="{{ route('vehiculos') }}">
+                    <form method="POST" action="{{ route('vehiculos')}}">
                         <div class="row">
                             @csrf
                             <div class="form-group col-12">
@@ -108,7 +112,14 @@ $
             </div>
         </div>
         <div>
-            {{$idVehiculo}}
+            @if ($mostrar)
+                {{ $idVehiculo }}
+                {{ $vehi }}
+            @endif
         </div>
     </div>
+@endsection
+@section('scrips')
+
+
 @endsection

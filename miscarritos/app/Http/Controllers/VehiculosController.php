@@ -5,16 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\Vehiculos;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Mockery\Generator\Method;
 
 class VehiculosController extends Controller
 {
+    public $mostrar;
     public $idVehiculo;
-
+    public $vehi;
     public function vehiculos(){
-        return view('vistas/Vehiculos');
-    }
-    public  function store(Request $request){
-        return $request;
+        $mostrar = false;
+        $idVehiculo = 0;
+        $vehi = new Vehiculos();
+        return view('vistas/Vehiculos')
+        ->with('mostrar', $mostrar)
+        ->with('idVehiculo', $idVehiculo)
+        ->with('vehi', $vehi);
     }
 
     public static function crearVehiculo(Request $request){
@@ -53,7 +58,7 @@ class VehiculosController extends Controller
 
     public static function get_vehiculo($id){
         $veh = new Vehiculos();
-        $query = 'SELECT * FROM vehiculos'. $id;
+        $query = 'SELECT * FROM vehiculos WHERE idvehiculo = '. $id;
         $vehiculo = DB::select($query);
         foreach($vehiculo as $item){
             $veh->idvehiculo = $item->idvehiculo;
@@ -66,7 +71,7 @@ class VehiculosController extends Controller
             $veh->capacidad_carga = $item->capacidad_carga;
             $veh->tipo_vehiculo_idtipo_vehiculo = $item->tipo_vehiculo_idtipo_vehiculo;
             $veh->alquiler_idalquiler = $item->alquiler_idalquiler;
-            $veh->reservas_idreserva = $item->reservas_idreserva;
+            $veh->reserva_idreserva = $item->reserva_idreservas;
         }
         return $veh;
     }
@@ -85,12 +90,18 @@ class VehiculosController extends Controller
     public static function delete_vehiculo($id)
     {
         //$consultaVehiculo = VehiculosController::get_vehiculo($id->get('id'));
-        try {
-            DB::delete('DELETE vehiculos WHERE idvehiculo = ?', [$id]);
-            return 'ok';
-        } catch (\Throwable $th) {
-            return 'Se ha presentado un error';
-        }
+            DB::delete('DELETE FROM vehiculos WHERE idvehiculo = ?', [$id]);
+    }
 
+    public function capturarItem($id)
+    {
+        $vehi = $this->get_vehiculo($id);
+        $idVehiculo = $id;
+        $mostrar = true;
+
+        return view('vistas/Vehiculos')
+        ->with('mostrar', $mostrar)
+        ->with('idVehiculo', $idVehiculo)
+        ->with('vehi', $vehi);
     }
 }
