@@ -6,10 +6,13 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MiscarritosController;
 use App\Http\Controllers\TallerController;
 use App\Http\Controllers\VehiculosController;
+
 use App\Http\Controllers\AlquilerController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Role;
+use App\Models\tallers;
+
 
 
 Route::get('/', [MiscarritosController::class, 'index']);
@@ -50,6 +53,9 @@ Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('v
  */
 Route::post('vehiculos/{id}', [VehiculosController::class, 'delete_vehiculo'])->name('vehiculos.de');
 
+Route::post('usuario', [UsuariosController::class, 'crearUsuario'])->name('usuario');
+
+Route::post('taller', [TallerController::class, 'crearReporteRevision'])->name('taller');
 
 //Captura de sesiones
 

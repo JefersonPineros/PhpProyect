@@ -8,6 +8,7 @@ $vehiculos = VehiculosController::get_AllVehiculos();
 @section('content')
     <div class="row">
         <div class="col-12" style="padding: 20px ">
+            <h1 style="text-align: center">Lista Vehiculos</h1>
             <table id="example" class="display" style="width:100%">
                 <thead>
                     <th>Id vehiculo</th>
@@ -105,7 +106,7 @@ $vehiculos = VehiculosController::get_AllVehiculos();
                                     <option>Comerciales</option>
                                 </select>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center" style="width: 330%; display: flex; align-items: center; justify-content: center;">
                                 <button type="submit" class="btn btn-primary mt-4">Crear vehiculo</button>
                             </div>
                         </div>
