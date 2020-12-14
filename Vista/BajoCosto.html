@@ -7,6 +7,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,11 +25,11 @@
 
                         <!-- Nav -->
                         <nav id="nav">
-                            <a href="index.html">Home</a>
                             <a href="Nosotros.html">Nosotros</a>
                             <a href="Servicios.html">Servicios</a>
                             <a href="InfoAdicional.html">Información Adicional</a>
-                            <a href="">Contactenos</a>
+                            <!--    <a href="#">Reserva</a>-->
+                            <!--    <a href="">Contactenos</a>-->
                         </nav>
 
                     </div>
@@ -78,7 +80,7 @@
                                     <img src="images/BajoCosto/ChevroletAgile.jpg" />
                                 </figure>
 
-                                <button>Reserva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <div class="design-container">
                                     <span class="design design--1"></span>
@@ -122,7 +124,7 @@
                                     <img src="images/BajoCosto/ChevroletCelta.jpg">
                                 </figure>
 
-                                <button>Reserva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <div class="design-container">
                                     <span class="design design--1"></span>
@@ -167,7 +169,7 @@
                                     <img src="images/BajoCosto/ChevroletCobalt.jpg">
                                 </figure>
 
-                                <button>Reerva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <!-- can add svg here and remove these eight spans -->
                                 <div class="design-container">
@@ -212,7 +214,7 @@
                                     <img src="images/BajoCosto/ChevroletSail.jpg" />
                                 </figure>
 
-                                <button>Reserva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <div class="design-container">
                                     <span class="design design--1"></span>
@@ -256,7 +258,7 @@
                                     <img src="images/BajoCosto/Citroën2CV.jpg">
                                 </figure>
 
-                                <button>Reserva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <div class="design-container">
                                     <span class="design design--1"></span>
@@ -301,7 +303,7 @@
                                     <img src="images/BajoCosto/CitroënMéhari.jpg">
                                 </figure>
 
-                                <button>Reerva !</button>
+                                <button><a href="Reserva.html">Reserva !</a></button>
 
                                 <!-- can add svg here and remove these eight spans -->
                                 <div class="design-container">
@@ -324,68 +326,60 @@
         </section>
 
         <!-- Footer -->
-        <section id="footer">
+        <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-12-medium">
-
-                        <!-- Links -->
-                        <section>
-                            <h2>Siguenos</h2>
-                            <div>
-                                <div class="row">
-                                    <div class="col-4 col-12-medium imp-medium">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Facebook</a></li>
-                                            <br>
-                                            <li><a href="#">Twitter</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-4 col-12-medium imp-medium">
-                                        <ul class="link-list last-child">
-                                            <li><a href="#">Instagram</a></li>
-                                            <br>
-                                            <li><a href="#">LinkedIn</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                    </div>
                     <div class="col-4 col-12-medium imp-medium">
-
-                        <!-- Blurb -->
-                        <section>
-                            <h2>Encuentranos</h2>
-                            <div>
-                                <strong>
-									Direccion:
-									<br>
-								</strong>Carrera 13 N° 65-10 Barrio Chapinero - Bogotá, Colombia.
-                            </div>
-                            <div>
-                                <strong>PBX:</strong>
-                                <a>(1) 5461600</a>
-                                <br>
-                                <strong>Móvil</strong>
-                                <a>+57 (318) 6625068</a>
-                            </div>
-                            <div>
-                                <strong>Email:</strong>
-                                <a>skillex.gaes@gmail.com</a>
-                            </div>
-                        </section>
-
+                        <h6>Contáctanos</h6>
+                        <div>
+                            <strong>Direccion:</strong> Carrera 13 N° 65-10 Barrio Chapinero - Bogotá, Colombia.
+                        </div>
+                        <div>
+                            <strong>PBX:</strong>
+                            <a>(1) 5461600</a>
+                            <br>
+                            <strong>Móvil</strong>
+                            <a>+57 (318) 6625068</a>
+                        </div>
+                        <div>
+                            <strong>Email:</strong>
+                            <a>skillex.gaes@gmail.com</a>
+                        </div>
                     </div>
+
+                    <div class="col-4 col-12-medium imp-medium">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="{{ URL::route('nosotros')}}">Nosotros</a></li>
+                            <li><a href="{{ URL::route('servicios')}}">Servicios</a></li>
+                            <li><a href="{{URL::route('adicional')}}">Información Adicional</a></li>
+                            <!--    <li><a href="#">Reserva</a></li> -->
+                            <!--    <li><a href="#">Contactenos</a></li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col-4 col-12-medium imp-medium">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; Skillex. All rights reserved. | Design: RavenDesign
+                        </p>
+                    </div>
+
                 </div>
             </div>
-        </section>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            &copy; Skillex. All rights reserved. | Design: Raven Design
-        </div>
+        </footer>
 
         </div>
 

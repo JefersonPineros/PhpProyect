@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reserva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reserva.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="bg-contact2" style="background-image: url('images/bg-01.jpg');">
+        <div class="container-contact2">
+            <div class="wrap-contact2">
+                <form class="contact2-form validate-form">
+                    <span class="contact2-form-title">
+						Formulario de reserva
+					</span>
+
+                    <div class="item">
+                        <p>Tipo de identificacion</p>
+                        <div class="city-item">
+                            <select>
+							<option value="">Seleccione</option>
+							<option value="1">Nit</option>
+							<option value="2">Cedula</option>
+						  </select>
+                        </div>
+
+                        <br>
+                        <div class="wrap-input2 validate-input" data-validate="Id is required">
+                            <input class="input2" type="text" name="id">
+                            <span class="focus-input2" data-placeholder="Numero de identificacion"></span>
+                        </div>
+
+                        <div class="wrap-input2 validate-input" data-validate="Name is required">
+                            <input class="input2" type="text" name="name">
+                            <span class="focus-input2" data-placeholder="Nombre"></span>
+                        </div>
+
+                        <div class="wrap-input2 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input class="input2" type="text" name="email">
+                            <span class="focus-input2" data-placeholder="Correo electronico"></span>
+                        </div>
+
+                        <div class="wrap-input2 validate-input" data-validate="Phone is required">
+                            <input class="input2" type="text" name="phone">
+                            <span class="focus-input2" data-placeholder="Telefono"></span>
+                        </div>
+
+                        <div class="wrap-input2 validate-input" data-validate="Car is required">
+                            <input class="input2" type="text" name="car">
+                            <span class="focus-input2" data-placeholder="Vehiculo"></span>
+                        </div>
+
+                        <div class="item">
+                            <p>Fecha de recogida</p>
+                            <input type="date" name="bdate" />
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <br>
+                        <div class="item">
+                            <p>Hora de recogida</p>
+                            <input type="time" name="name" />
+                            <i class="fas fa-clock"></i>
+                        </div>
+
+                        <br>
+                        <div class="wrap-input2 validate-input" data-validate="address is required">
+                            <input class="input2" type="text" name="address">
+                            <span class="focus-input2" data-placeholder="Direcion"></span>
+                        </div>
+                        <div class="item">
+                            <p>Ciudad</p>
+                            <div class="city-item">
+                                <select>
+								<option value="">Seleccione</option>
+								<option value="1">Bogota</option>
+								<option value="2">Medellin</option>
+								<option value="3">Ibague</option>
+								<option value="4">Manizales</option>
+								<option value="5">Cartagena</option>
+							  </select>
+                            </div><br>
+
+                            <div class="wrap-input2 validate-input" data-validate="Phone is required">
+                                <input class="input2" type="text" name="phone">
+                                <span class="focus-input2" data-placeholder="Valor del carro por día"></span>
+                            </div>
+
+                            <div class="wrap-input2 validate-input" data-validate="Phone is required">
+                                <input class="input2" type="text" name="phone">
+                                <span class="focus-input2" data-placeholder="Descuento Promoción"></span>
+                            </div>
+
+                            <div class="wrap-input2 validate-input" data-validate="Phone is required">
+                                <input class="input2" type="text" name="phone">
+                                <span class="focus-input2" data-placeholder="Total a pagar"></span>
+                            </div>
+
+
+                            <div class="container-contact2-form-btn">
+                                <div class="wrap-contact2-form-btn">
+                                    <div class="contact2-form-bgbtn"></div>
+                                    <button class="contact2-form-btn">Reservar</button>
+                                </div>
+
+                                <div class="wrap-contact2-form-btn">
+                                    <div class="contact2-form-bgbtn"></div>
+                                    <button class="contact2-form-btn"><a href="Index.html">Cancelar</a></button>
+                                </div>
+                            </div>
+                </form>
+                </div>
+                </div>
+            </div>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-23581568-13');
+            </script>
+
+</body>
+
+</html>
