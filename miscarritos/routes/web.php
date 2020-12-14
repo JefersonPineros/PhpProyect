@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MiscarritosController;
 use App\Http\Controllers\VehiculosController;
+use App\Http\Controllers\AlquilerController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Role;
@@ -39,6 +40,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
  * Configuracion metodos post
  */
 Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
+
+Route::post('alquiler', [AlquilerController::class, 'crearAlquiler'])->name('alquiler');
 
 
 //Captura de sesiones

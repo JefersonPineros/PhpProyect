@@ -4,7 +4,7 @@ use App\Http\Controllers\VehiculosController;
 use App\Models\Vehiculos;
 
 $vehiculos = VehiculosController::get_AllVehiculos();
-$
+
 @endphp
 @section('content')
     <div class="row">
@@ -90,6 +90,7 @@ $
                             <div class="form-group col-6">
                                 <label for="exampleFormControlSelect1" class="form-control-label">Tipo vehiculo</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected="selected">Elije una Opción </option>
                                     <option>Bajo costo</option>
                                     <option>Vehículo familiar</option>
                                     <option>Sedanes</option>
@@ -108,7 +109,7 @@ $
             </div>
         </div>
         <div>
-            {{$idVehiculo}}
+            
         </div>
     </div>
 @endsection
