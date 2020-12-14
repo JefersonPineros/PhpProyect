@@ -52,4 +52,10 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Models\Role');
     }
+
+
+    public function alqui()
+    {
+        return $this->hasMany('App\Models\alquilers');
+    }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MiscarritosController;
 use App\Http\Controllers\TallerController;
 use App\Http\Controllers\VehiculosController;
+use App\Http\Controllers\AlquilerController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Role;
@@ -42,10 +43,11 @@ Route::get('vehiculos/{id}',[VehiculosController::class, 'capturarItem'])->name(
  */
 Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('vehiculos');
 
-/**
+Route::post('alquiler', [AlquilerController::class, 'crearAlquiler'])->name('alquiler');
  * Metodos delete
  */
 Route::post('vehiculos/{id}', [VehiculosController::class, 'delete_vehiculo'])->name('vehiculos.de');
+
 
 //Captura de sesiones
 
