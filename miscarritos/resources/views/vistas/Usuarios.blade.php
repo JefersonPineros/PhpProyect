@@ -34,7 +34,10 @@ $usuarios = UsuariosController::get_AllUsers();
                         <td>{{$item->telefono}}</td>
                         <td>{{$item->role_id}}</td>
                         <td>
-                            <button class="btn btn-danger" >X</button>
+                            <form method="POST" action="{{ route('usuario.de',  $item->id)}}">
+                                @csrf
+                                <button type="submit" class="btn btn-danger" >X</button>
+                            </form>
                             <button class="btn btn-info">A</button>
                         </td>
                     <tr>

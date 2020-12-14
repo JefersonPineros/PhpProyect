@@ -84,12 +84,12 @@ class UsuariosController extends Controller
             return 'Se ha presentado un error';
         }
     }
+    
+    /**
+     * FUNCIÓN ELIMINAR USUARIO POR ID
+     */
     public static function deleteUser($id){
-        try {
-            DB::delete('DELETE users WHERE id = ?', [$id]);
-            return 'ok';
-        } catch (\Throwable $th) {
-            return 'No se pudo eliminar el usuario';
-        }
+        DB::delete('DELETE FROM users WHERE id = ?', [$id]);
+        return view('vistas/Usuarios');
     }
 }

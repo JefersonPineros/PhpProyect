@@ -35,11 +35,18 @@ Route::get('taller', [TallerController::class, 'taller'])->name('taller');
 
 Route::get('vehiculos', [VehiculosController::class, 'vehiculos'])->name('vehiculos');
 
+Route::get('vehiculos', [VehiculosController::class, 'vehiculos'])->name('vehiculos');
+
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+
 Route::post('alquiler', [AlquilerController::class, 'crearAlquiler'])->name('alquiler');
+
+Route::post('usuario', [UsuariosController::class, 'crearUsuario'])->name('usuario');
+
+Route::post('taller', [TallerController::class, 'crearReporteRevision'])->name('taller');
 
 /**
  * Configuracion metodos post
@@ -53,9 +60,8 @@ Route::post('vehiculos', [VehiculosController::class, 'crearVehiculo'])->name('v
  */
 Route::post('vehiculos/{id}', [VehiculosController::class, 'delete_vehiculo'])->name('vehiculos.de');
 
-Route::post('usuario', [UsuariosController::class, 'crearUsuario'])->name('usuario');
+Route::post('usuario/{id}', [UsuariosController::class, 'deleteUser'])->name('usuario.de');
 
-Route::post('taller', [TallerController::class, 'crearReporteRevision'])->name('taller');
 
 //Captura de sesiones
 
