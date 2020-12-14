@@ -1,14 +1,6 @@
 @extends('layout.Platilla')
 @section('content')
 
-@php
-    use App\Http\Controllers\HomeController;
-    $listado = HomeController::get_User(1);
-@endphp
-{{$listado}}
-{{-- @foreach ($listado as $item)
-    {{ $item->name }}
-@endforeach --}}
 <section id="features">
             <div class="container">
                 <div class="row">
